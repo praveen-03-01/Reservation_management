@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Black;
+}
+
+/* Gradient Background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e2a84, #c33764);
+    padding: 20px;
+}
+
+
+/* Glass Card */
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/* Title */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 200px;
+    font-family: Ariyal Black;
+    background-color: white;    
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Inputs & Select */
+form input,
+form select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+form input:focus,
+form select:focus {
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1e90ff, #005bea);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #0066ff, #0047b3);
+}

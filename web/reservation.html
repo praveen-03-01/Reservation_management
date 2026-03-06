@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Room Reservation Form</h2>
+
+    <form action="ReservationServlet" method="POST">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <label>Check-in Date</label>
+        <input type="date" name="check_in" required>
+
+        <label>Check-out Date</label>
+        <input type="date" name="check_out" required>
+
+        <select name="room_type" required>
+            <option value="">Select Room Type</option>
+            <option value="Single">Single Room</option>
+            <option value="Double">Double Room</option>
+            <option value="Suite">Suite</option>
+        </select>
+
+        <button type="submit" name="submit">Reserve Now</button>
+    </form>
+</div>
+
+</body>
+</html>

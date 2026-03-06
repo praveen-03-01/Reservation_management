@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Management Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="sidebar">
+        <h2>Ocean<br><span>View Resort</br></span></h2>
+          <ul>
+    <li class="active">
+        <a href="#">
+            <i class="fas fa-home"></i> Dashboard
+        </a>
+    </li>
+
+    <li>
+        <a href="reservation.html">
+            <i class="fas fa-calendar-check"></i> Add Reservation
+        </a>
+    </li>
+
+    
+    <li>
+        <a href="help.html">
+            <i class="fas fa-users"></i> Help
+        </a>
+    </li>
+</ul>
+    </div>
+
+   
+    <div class="content">
+        <div class="topbar">
+            <h2>Dashboard</h2>
+            <div class="user">
+                <i class="fas fa-user-circle"></i>(Manager)
+            </div>
+        </div>
+
+        
+        <div class="cards">
+            <a href="ViewReservationServlet">
+            <div class="card">
+                <i class="fas fa-bed"></i>
+                <h2>21</h2>
+                <p>View Reservations</p>
+            </div>
+             </a>
+             
+             <a href="ViewBillServlet">
+            <div class="card">
+                <i class="fas fa-bookmark"></i>
+                <h2>8</h2>
+                <p>Bill</p>
+            </div>
+             </a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
